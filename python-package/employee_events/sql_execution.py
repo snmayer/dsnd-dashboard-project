@@ -7,7 +7,7 @@ import pandas as pd
 # that points to the absolute path for the `employee_events.db` file
 db_path = Path(__file__).parent / "employee_events.db"
 
- # Leave this code unchanged
+# Leave this code unchanged
 def query(func):
     """
     Decorator that runs a standard sql execution

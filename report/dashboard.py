@@ -1,10 +1,8 @@
-from xml.parsers.expat import model
-
 from fasthtml.common import *
 import matplotlib.pyplot as plt
 
 # Import QueryBase, Employee, Team from employee_events
-from employee_events import QueryBase, Employee, Team
+from employee_events import Employee, Team
 # import the load_model function from the utils.py file
 from report.utils import load_model
 """
@@ -194,7 +192,7 @@ class DashboardFilters(FormGroup):
 
     id = "top-filters"
     action = "/update_data"
-    method="POST"
+    method = "POST"
 
     children = [
         Radio(
@@ -217,6 +215,7 @@ class Report(CombinedComponent):
     # of the header, dashboard filters,
     # data visualizations, and notes table
     children = [Header(), DashboardFilters(), Visualizations(), NotesTable()]
+
 
 # Initialize a fasthtml app 
 app = FastHTML()

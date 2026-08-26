@@ -7,10 +7,10 @@ class CombinedComponent:
     
     def __call__(self, userid, model):
        
-       called_children = self.call_children(userid, model)
-       div_args = self.div_args(userid, model)
+        called_children = self.call_children(userid, model)
+        div_args = self.div_args(userid, model)
 
-       return self.outer_div(called_children, div_args)
+        return self.outer_div(called_children, div_args)
     
     def call_children(self, userid, model):
 
