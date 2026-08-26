@@ -1,17 +1,7 @@
 [flake8]
 max-line-length = 88
-extend-ignore = 
-    E203,  # whitespace before ':'
-    E501,  # line too long (will use black instead)
-    W291,  # trailing whitespace
-    W292,  # no newline at end of file
-    W293,  # blank line contains whitespace
-    W391,  # blank line at end of file
-    E302,  # expected 2 blank lines
-    E303,  # too many blank lines
-    E301,  # expected 1 blank line
-    F403,  # 'from module import *' used
-exclude = 
+extend-ignore = E203,E501,W291,W292,W293,W391,E302,E303,E301,F403
+exclude =
     .git,
     __pycache__,
     .venv,
