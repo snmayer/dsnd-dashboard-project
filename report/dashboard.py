@@ -1,4 +1,4 @@
-from fasthtml.common import *
+from fasthtml.common import H1, Div, FastHTML, serve
 import matplotlib.pyplot as plt
 
 # Import QueryBase, Employee, Team from employee_events
