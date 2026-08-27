@@ -1,5 +1,7 @@
+# pyright: reportMissingImports=false
+# pylint: disable=no-name-in-module
 from .combined_component import CombinedComponent
-from fasthtml.common import Button, Form
+from fasthtml.components import Button, Form
 from fasthtml.pico import Group
 
 class FormGroup(CombinedComponent):

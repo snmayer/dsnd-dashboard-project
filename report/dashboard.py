@@ -1,3 +1,4 @@
+# pylint: disable=no-name-in-module,no-member
 from fasthtml.components import Div, H1, Title
 from fasthtml.core import FastHTML, serve
 import matplotlib.pyplot as plt
